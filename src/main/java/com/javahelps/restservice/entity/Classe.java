@@ -13,7 +13,7 @@ import javax.persistence.Id;
  *
  * @author pie
  */
-@Entity
+@Entity(name = "class")
 public class Classe {
     
     @Id

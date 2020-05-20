@@ -5,12 +5,16 @@
  */
 package com.javahelps.restservice.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author bonex27
  */
+@Entity(name="student_class")
 public class StudentClass {
-    
+    @Id
     private int id;
     private int idStudent;
     private int idClass;
@@ -19,6 +23,9 @@ public class StudentClass {
         this.id = id;
         this.idStudent = idStudent;
         this.idClass = idClass;
+    }
+
+    public StudentClass() {
     }
 
     public int getId() {

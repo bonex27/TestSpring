@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.javahelps.restservice.entity.Classe;
 
-@RepositoryRestResource(path = "/class")
-public interface UserRepository extends JpaRepository<Classe, Integer> {
+@RepositoryRestResource(path = "classe")
+public interface ClassRepository extends JpaRepository<Classe, Integer> {
 
 }

@@ -5,12 +5,17 @@
  */
 package com.javahelps.restservice.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author pie
  */
+@Entity(name = "student")
 public class Student {
     
+    @Id
     private int id;
     private String name;
     private String surname;
@@ -23,6 +28,9 @@ public class Student {
         this.surname = surname;
         this.sidiCode = sidiCode;
         this.taxCode = taxCode;
+    }
+
+    public Student() {
     }
 
     
